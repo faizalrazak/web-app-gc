@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
+import { HttpService } from './../http.service'
 
 @Component({
   selector: 'app-groceries',
@@ -8,13 +9,21 @@ import { Router } from '@angular/router'
 })
 export class GroceriesComponent implements OnInit {
 
-  constructor(public router:Router) { }
+	products: any;
+
+  constructor(public router:Router, private httpService:HttpService) {
+	  this.httpService.getProduct()
+	  .subscribe(data => {
+	    console.log(data)
+	    this.products = data.data
+	  })
+  }
 
   ngOnInit() {
   }
 
-  detail(){
-  	this.router.navigateByUrl('product-detail')
+  detail(id){
+  	this.router.navigate(['/product-detail', id])
   }
 
 }

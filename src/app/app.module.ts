@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
+import {HttpService} from './http.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -48,6 +50,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -98,12 +101,14 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
         path: 'checkout/overview/payment/complete',
         component: OrderCompleteComponent
       },{
-        path: 'product-detail',
+        path: 'product-detail/:id',
         component: ProductDetailComponent
       }
     ])
   ],
-  providers: [],
+  providers: [
+    HttpService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
