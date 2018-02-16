@@ -21,128 +21,23 @@
         <div class="col-lg-10 col-md-8  content-col">
           <div class="blog-listing">
             <div class="row">
-              <div class="col-lg-6 col-xs-12">
+              <div *ngFor="let blog of blogs" class="col-lg-6 col-xs-12">
                 <div class="blog-item">
                   <div class="blog-media mb-30">
 
-                    <img src="assets/images/soba.png" alt="Electro">
-
-                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> 
-                  </div>
-                  <div class="blog-detail">
-                    <span class="post-date">01 jan 2017</span>
-                    <h3><a href="single-blog.html">8 New Year Food Traditions Around The World</a></h3>
-                    <p>Uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures donec sollicitudin erat eget malesuada scelerisque. Nullam consectetur, arcu sed tincidunt mattis, massa nunc sodales mauris, ut lobortis arcu tortor in risus.</p>
-                    <hr>
-                    <div class="post-info">
-                      <ul>
-                        <li><span>By</span><a href="#"> cormon jons</a></li>
-                        <li><a href="#">(5) comments</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-xs-12">
-                <div class="blog-item">
-                  <div class="blog-media mb-30">
                     <img src="assets/images/food-wastage.jpg" alt="Electro">
 
                     <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> 
                   </div>
                   <div class="blog-detail">
-                    <span class="post-date">02 jan 2017</span>
-                    <h3><a href="single-blog.html">Food waste: Initiatives worldwide</a></h3>
-                    <p>Uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures donec sollicitudin erat eget malesuada scelerisque. Nullam consectetur, arcu sed tincidunt mattis, massa nunc sodales mauris, ut lobortis arcu tortor in risus.</p>
+                    <span class="post-date">{{blog.date}}</span>
+                    <!-- <span class="post-date">01 jan 2017</span> -->
+                    <h3><a href="single-blog.html">{{blog.blog_title}}</a></h3>
+                    <p>{{blog.description}}</p>
                     <hr>
                     <div class="post-info">
                       <ul>
-                        <li><span>By</span><a href="#"> cormon jons</a></li>
-                        <li><a href="#">(5) comments</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-xs-12">
-                <div class="blog-item">
-                  <div class="blog-media mb-30">
-                    <img src="assets/images/9-ways.jpg" alt="Electro">
-
-                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> 
-                  </div>
-                  <div class="blog-detail">
-                    <span class="post-date">03 jan 2017</span>
-                    <h3><a href="single-blog.html">9 ways to avoid food wastage at home</a></h3>
-                    <p>Uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures donec sollicitudin erat eget malesuada scelerisque. Nullam consectetur, arcu sed tincidunt mattis, massa nunc sodales mauris, ut lobortis arcu tortor in risus.</p>
-                    <hr>
-                    <div class="post-info">
-                      <ul>
-                        <li><span>By</span><a href="#"> cormon jons</a></li>
-                        <li><a href="#">(5) comments</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-xs-12">
-                <div class="blog-item">
-                  <div class="blog-media mb-30">
-
-                    <img src="assets/images/born_bread.jpg" alt="Electro">
-
-                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> 
-                  </div>
-                  <div class="blog-detail">
-                    <span class="post-date">02 jan 2017</span>
-                    <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
-                    <p>Uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures donec sollicitudin erat eget malesuada scelerisque. Nullam consectetur, arcu sed tincidunt mattis, massa nunc sodales mauris, ut lobortis arcu tortor in risus.</p>
-                    <hr>
-                    <div class="post-info">
-                      <ul>
-                        <li><span>By</span><a href="#"> cormon jons</a></li>
-                        <li><a href="#">(5) comments</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-xs-12">
-                <div class="blog-item">
-                  <div class="blog-media mb-30">
-
-                    <img src="assets/images/expiration.jpg" alt="Electro">
-
-                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> 
-                  </div>
-                  <div class="blog-detail">
-                    <span class="post-date">03 jan 2017</span>
-                    <h3><a href="single-blog.html">5 Foods You Can Still Eat Past The Expiration Date</a></h3>
-                    <p>Uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures donec sollicitudin erat eget malesuada scelerisque. Nullam consectetur, arcu sed tincidunt mattis, massa nunc sodales mauris, ut lobortis arcu tortor in risus.</p>
-                    <hr>
-                    <div class="post-info">
-                      <ul>
-                        <li><span>By</span><a href="#"> cormon jons</a></li>
-                        <li><a href="#">(5) comments</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-xs-12">
-                <div class="blog-item">
-                  <div class="blog-media mb-30">
-                    <img src="assets/images/blog1.jpg" alt="Electro">
-                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a> 
-                  </div>
-                  <div class="blog-detail">
-                    <span class="post-date">02 jan 2017</span>
-                    <h3><a href="single-blog.html">Combined with a handful of model</a></h3>
-                    <p>Uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures donec sollicitudin erat eget malesuada scelerisque. Nullam consectetur, arcu sed tincidunt mattis, massa nunc sodales mauris, ut lobortis arcu tortor in risus.</p>
-                    <hr>
-                    <div class="post-info">
-                      <ul>
-                        <li><span>By</span><a href="#"> cormon jons</a></li>
+                        <li><span>By</span><a href="#"> {{blog.author}}</a></li>
                         <li><a href="#">(5) comments</a></li>
                       </ul>
                     </div>

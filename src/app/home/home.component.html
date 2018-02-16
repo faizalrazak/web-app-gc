@@ -108,40 +108,8 @@
                 <ul>
                   <li>
                     <div id="data-step1" class="items-step1 product-slider-main position-r selected" data-temp="tabdata">
-                      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="product-image"> 
-                            <a href="product-page.html"> 
-                              <img src="assets/images/mission-wrap.jpg" alt="Electro"> 
-                            </a>
-                            <div class="product-detail-inner">
-                              <div class="detail-inner-left left-side">
-                                <ul>
-                                  <li class="pro-cart-icon">
-                                    <form>
-                                      <button title="Add to Cart"><span></span>Add to Cart</button>
-                                    </form>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="detail-inner-left right-side">
-                                <ul>
-                                  <li class="pro-wishlist-icon active"><a href="wishlist.html" title="Wishlist"></a></li>
-                                  <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">Mission Wraps Original Flavour 360g</a> </div>
-                            <div class="price-box"> <span class="price">RM3.85</span> <del class="price old-price">RM7.70</del> </div>
-                            <div class="rating-summary-block right-side">
-                              <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                      <!-- LATEST PRODUCT START -->
+                      <div *ngFor="let product of products" class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="main-label sale-label"><span>Sale</span></div>
                           <div class="product-image"> <a href="product-page.html"> <img src="assets/images/cadbury.jpg" alt="Electro"> </a>
@@ -164,131 +132,8 @@
                             </div>
                           </div>
                           <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">Cadbury Marvelous Creation</a> </div>
-                            <div class="price-box"> <span class="price">RM5.40</span> <del class="price old-price">RM8.99</del> </div>
-                            <div class="rating-summary-block right-side">
-                              <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="main-label new-label"><span>New</span></div>
-                          <div class="product-image"> <a href="product-page.html"> <img src="assets/images/virgin-oil.jpg" alt="Electro"> </a>
-                            <div class="product-detail-inner">
-                              <div class="detail-inner-left left-side">
-                                <ul>
-                                  <li class="pro-cart-icon">
-                                    <form>
-                                      <button title="Add to Cart"><span></span>Add to Cart</button>
-                                    </form>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="detail-inner-left right-side">
-                                <ul>
-                                  <li class="pro-wishlist-icon"><a href="wishlist.html" title="Wishlist"></a></li>
-                                  <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">La Maestranza Extra Virgin Olive Oil 750ml</a> </div>
-                            <div class="price-box"> <span class="price">RM13.50</span> <del class="price old-price">RM30.00</del> </div>
-                            <div class="rating-summary-block right-side">
-                              <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-                        <div class="product-item sold-out">
-                          <div class="product-image"> <a href="product-page.html"> <img src="assets/images/ferrero.jpg" alt="Electro"> </a>
-                            <div class="product-detail-inner">
-                              <div class="detail-inner-left left-side">
-                                <ul>
-                                  <li class="pro-cart-icon">
-                                    <form>
-                                      <button title="Add to Cart"><span></span>Add to Cart</button>
-                                    </form>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="detail-inner-left right-side">
-                                <ul>
-                                  <li class="pro-wishlist-icon"><a href="wishlist.html" title="Wishlist"></a></li>
-                                  <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">Ferrero Rocher T30</a> </div>
-                            <div class="price-box"> <span class="price">RM40.00</span> <del class="price old-price">RM52.29</del> </div>
-                            <div class="rating-summary-block right-side">
-                              <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="main-label sale-label"><span>Sale</span></div>
-                          <div class="product-image"> <a href="product-page.html"> <img src="assets/images/crousti-petal.jpg" alt="Electro"> </a>
-                            <div class="product-detail-inner">
-                              <div class="detail-inner-left left-side">
-                                <ul>
-                                  <li class="pro-cart-icon">
-                                    <form>
-                                      <button title="Add to Cart"><span></span>Add to Cart</button>
-                                    </form>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="detail-inner-left right-side">
-                                <ul>
-                                  <li class="pro-wishlist-icon"><a href="wishlist.html" title="Wishlist"></a></li>
-                                  <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">Chabrior Crousti Petal Cereal 375g</a> </div>
-                            <div class="price-box"> <span class="price">RM5.00</span> <del class="price old-price">RM9.90</del> </div>
-                            <div class="rating-summary-block right-side">
-                              <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="main-label sale-label"><span>Sale</span></div>
-                          <div class="product-image"> <a href="product-page.html"> <img src="assets/images/f&n.jpg" alt="Electro"> </a>
-                            <div class="product-detail-inner">
-                              <div class="detail-inner-left left-side">
-                                <ul>
-                                  <li class="pro-cart-icon">
-                                    <form>
-                                      <button title="Add to Cart"><span></span>Add to Cart</button>
-                                    </form>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="detail-inner-left right-side">
-                                <ul>
-                                  <li class="pro-wishlist-icon"><a href="wishlist.html" title="Wishlist"></a></li>
-                                  <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="product-item-details">
-                            <div class="product-item-name"> <a href="product-page.html">F&N Soda 1.5L</a> </div>
-                            <div class="price-box"> <span class="price">RM1.20</span> <del class="price old-price">RM2.45</del> </div>
+                            <div class="product-item-name"> <a href="product-page.html">{{product.name}}</a> </div>
+                            <div class="price-box"> <span class="price">RM{{product.normal_price - 2 | number:0}}</span> <del class="price old-price">RM{{product.normal_price}}</del> </div>
                             <div class="rating-summary-block right-side">
                               <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
                             </div>
@@ -296,6 +141,7 @@
                         </div>
                       </div>
                     </div>
+                    <!-- LATEST END -->
                   </li>
                   <li>
                     <div id="data-step2" class="items-step2 product-slider-main position-r" data-temp="tabdata">

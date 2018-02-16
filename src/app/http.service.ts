@@ -15,4 +15,16 @@ export class HttpService {
     .map((res:Response) => res.json());
   }
 
+  getLatestProducts(){
+  	return this.http.get(
+    	'http://gc-dashboard.herokuapp.com/api/products/latest')
+    .map((res:Response) => res.json());
+  }
+
+  getBlogs(){
+  	return this.http.get(
+    	'http://gc-dashboard.herokuapp.com/api/blogs/all')
+    .map((res:Response) => res.json());
+  }
+
 }

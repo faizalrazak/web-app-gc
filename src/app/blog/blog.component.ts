@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from './../http.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+blogs;
+
+  constructor(public httpService:HttpService){
+  	this.httpService.getBlogs()
+	  .subscribe(data => {
+	    console.log(data)
+	    this.blogs = data.data
+	})
+  }
 
   ngOnInit() {
   }

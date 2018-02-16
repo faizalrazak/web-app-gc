@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpService } from './../http.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,15 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public router:Router) { }
+products;
+
+  constructor(public router:Router, public httpService:HttpService){
+  	this.httpService.getLatestProducts()
+	  .subscribe(data => {
+	    console.log(data)
+	    this.products = data.data
+	})
+  }
 
   ngOnInit() {
   }
