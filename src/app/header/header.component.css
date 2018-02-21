@@ -1,0 +1,20 @@
+.icon-hover{
+    color: white;
+    font-size: 25px;
+}
+
+.icon-hover:hover{
+    color: black;
+    font-size: 25px;
+}
+
+.center {
+    display:table-cell !important;
+    vertical-align:middle;
+    text-align: center;
+    float:none;
+}
+
+.selected {
+    color: red;
+}

@@ -22,12 +22,14 @@
         <div class="col-xs-12">
           <div class="checkout-step mb-40">
             <ul>
-              <li class="active"> <a href="checkout.html">
-                <div class="step">
-                  <div class="line"></div>
-                  <div class="circle">1</div>
-                </div>
-                <span>Shipping</span> </a> </li>
+              <li class="active">
+                <a href="checkout.html">
+                  <div class="step">
+                      <div class="circle">1</div>
+                  </div>
+                <span><strong>Shipping</strong> </span>
+              </a>
+              </li>
               <li> <a href="overview">
                 <div class="step">
                   <div class="line"></div>
@@ -46,11 +48,6 @@
                   <div class="circle">4</div>
                 </div>
                 <span>Order Complete</span> </a> </li>
-              <li>
-                <div class="step">
-                  <div class="line"></div>
-                </div>
-              </li>
             </ul>
             <hr>
           </div>
@@ -732,7 +729,7 @@
                         </div>
                       </div>
                       <div class="col-sm-12">
-                        <a routerLink="overview" class="btn btn-color right-side">Next</a>
+                        <a (click)="overview()" class="btn btn-color right-side">Next</a>
                       </div>
                     </div>
                   </div>

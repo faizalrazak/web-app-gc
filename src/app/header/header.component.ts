@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  	public router:Router
+  	){
+
+  }
 
   ngOnInit() {
   }
 
+  home(){
+  	this.router.navigate(['/home']);
+  }
+
+  aboutUs(){
+  	this.router.navigate(['/about-us']);
+  }
+
+  groceries(){
+  	this.router.navigate(['/groceries']);
+  }
+
+  homemade(){
+  	this.router.navigate(['/homemade']);
+  }
+
+  mobile(){
+  	this.router.navigate(['/grub-mobile']);
+  }
+
+  bag(){
+  	this.router.navigate(['/grub-bag']);
+  }
+
+  blog(){
+  	this.router.navigate(['/blog']);
+  }
+
+  wishlist(){
+  	this.router.navigate(['/wishlist']);
+  }
+
+  cart(){
+  	this.router.navigate(['/cart']);
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-overview',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderOverviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  	public router:Router
+  	){
+
+  }
 
   ngOnInit() {
+  }
+
+  paymentPage(){
+  	this.router.navigate(['/payment']);
   }
 
 }

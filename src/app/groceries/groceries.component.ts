@@ -9,14 +9,21 @@ import { HttpService } from './../http.service'
 })
 export class GroceriesComponent implements OnInit {
 
-	products: any;
+	deals: any;
+  product_category;
 
   constructor(public router:Router, private httpService:HttpService) {
-	  this.httpService.getProduct()
+	  
+    this.httpService.getAllActiveDeal()
 	  .subscribe(data => {
 	    console.log(data)
-	    this.products = data.data
+	    this.deals = data.data
 	  })
+
+    this.httpService.getProductCategory()
+    .subscribe(data => {
+      this.product_category = data.data
+    })
   }
 
   ngOnInit() {

@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpModule} from '@angular/http';
-import {HttpService} from './http.service';
+import { HttpModule } from '@angular/http';
+import { HttpService } from './http.service';
+import { AuthService } from './auth.service';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -51,9 +53,11 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
-        path: '',
+        path: 'home',
         component: HomeComponent
       },{
         path: 'about-us',
@@ -92,13 +96,13 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
         path: 'cart',
         component: CartComponent,
       },{
-        path: 'checkout/overview',
+        path: 'overview',
         component: OrderOverviewComponent
       },{
-        path: 'checkout/overview/payment',
+        path: 'payment',
         component: PaymentComponent
       },{
-        path: 'checkout/overview/payment/complete',
+        path: 'order-complete',
         component: OrderCompleteComponent
       },{
         path: 'product-detail/:id',
@@ -107,7 +111,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ])
   ],
   providers: [
-    HttpService
+    HttpService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

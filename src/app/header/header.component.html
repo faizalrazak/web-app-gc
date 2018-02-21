@@ -92,30 +92,30 @@
                 </div>
                 <div class="mobilemenu-content">
                   <ul class="nav navbar-nav" id="menu-main">
-                    <li>
-                      <a routerLink="">Home</a>
+                    <li (click)="home()">
+                      <a>Home</a>
                     </li>
-                    <li>
-                      <a routerLink="about-us">About Us</a>
+                    <li (click)="aboutUs()">
+                      <a>About Us</a>
                     </li>
-                    <li>
-                      <a routerLink="groceries">Grub Groceries</a>
+                    <li (click)="groceries()">
+                      <a>Grub Groceries</a>
                     </li>
-                    <li>
-                      <a routerLink="homemade">Grub Homemade</a>
+                    <li (click)="homemade()">
+                      <a>Grub Homemade</a>
                     </li>
-                    <li>
-                      <a routerLink="grub-mobile">Grub Mobile</a>
+                    <li (click)="mobile()">
+                      <a>Grub Mobile</a>
                     </li>
-                    <li>
-                      <a routerLink="grub-bag">Grub Bag</a>
+                    <li (click)="bag()">
+                      <a>Grub Bag</a>
                     </li>
-                    <li>
-                      <a routerLink="blog">Blog</a>
+                    <li (click)="blog()">
+                      <a>Blog</a>
                     </li>
-                    <li>
+                    <!-- <li>
                       <a routerLink="contact">Contact Us</a>
-                    </li>
+                    </li> -->
                     
                   </ul>
                 </div>
@@ -126,7 +126,7 @@
         <div class="col-lg-3 col-md-2 col-lgmd-20per position-end">
           <div class="right-side float-left-xs header-right-link">
             <ul>
-               <li class="compare-icon"> <a href="#" title="account"> <span> </span> </a>
+               <li><a href="#" title="account"><span class="center icon-hover"><i class="fa fa-user"></i></span> </a>
                 <div class="dropdown-menu header-link-dropdown">
                   <ul class="link-dropdown-list">
                     <li>
@@ -144,12 +144,12 @@
                   </ul>
                 </div>
               </li>
-              <li class="wishlist-icon">
-                <a routerLink="wishlist" title="wishlist">
-                  <span></span>
+              <li (click)="wishlist()">
+                <a title="wishlist">
+                  <span  class="center icon-hover"><i class="fa fa-heart"></i></span>
                 </a>
               </li>
-              <li class="cart-icon"> <a href="#" title="cart"> <span> <small class="cart-notification">2</small> </span> </a>
+              <li (click)="cart()"> <a title="cart"> <span class="center icon-hover"><i class="fa fa-shopping-cart"></i></span><small class="cart-notification">2</small> </a>
                 <div class="cart-dropdown header-link-dropdown">
                   <ul class="cart-list link-dropdown-list">
                     <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>

@@ -1,46 +1,47 @@
 <!-- Bread Crumb STRAT -->
 <div class="banner inner-banner1 ">
-    <div class="container">
-      <section class="banner-detail center-xs">
-        <h1 class="banner-title">Grub Bag</h1>
-        <div class="bread-crumb right-side float-none-xs">
-          <ul>
-            <li><a href="index.html">Home</a>/</li>
-            <li><span>Grub Bags</span></li>
-          </ul>
-        </div>
-      </section>
-    </div>
+  <div class="container">
+    <section class="banner-detail center-xs">
+      <h1 class="banner-title">Grub Bag</h1>
+      <div class="bread-crumb right-side float-none-xs">
+        <ul>
+          <li><a href="index.html">Home</a>/</li>
+          <li><span>Grub Bags</span></li>
+        </ul>
+      </div>
+    </section>
   </div>
-  <!-- Bread Crumb END -->  
-   <div class="banner inner-banner2 ">
-    <div class="container">
-      <section class=" center-xs">
-        <div class="grubbag-desc">
-        <h1 class="banner-title">Grub Bags</h1>
-        <p>GRUB BAG is a way for us to give back to the community by subsidizing low-income families’ food essentials. It comprises of rice, cooking oil, sugar, salt and eggs. Grub Cycle delivers Grub Bag to the families on a monthly basis with the hope to lessen the burden of the families in need & empower their economy! Want to know more?</p>
-        </div>
-      </section>
-    </div>
+</div>
+<!-- Bread Crumb END -->  
+ <div class="banner inner-banner2 ">
+  <div class="container">
+    <section class=" center-xs">
+      <div class="grubbag-desc">
+      <h1 class="banner-title">Grub Bags</h1>
+      <p>GRUB BAG is a way for us to give back to the community by subsidizing low-income families’ food essentials. It comprises of rice, cooking oil, sugar, salt and eggs. Grub Cycle delivers Grub Bag to the families on a monthly basis with the hope to lessen the burden of the families in need & empower their economy! Want to know more?</p>
+      </div>
+    </section>
   </div>
-  <section class=" pt-95 pb-95">
-      <div class="container">
-        <div class="product-listing">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="heading-part mb-30">
-                <h2 class="main_title"><span>The Grub Bag</span></h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="pro_cat">
-              <div class="owl-carousel pro-cat-slider ">
-                <div class="item">
-                  <div class="product-item">
-                    <div class="main-label new-label"><span>New</span></div>
+</div>
 
-                    <div class="product-image"> <a href="product-page.html"> <img src="assets/images/bag1.png" alt="Electro"> </a>
+<div class="container pt-95 pb-95">
+  <div class="product-listing">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="heading-part mb-30">
+          <h2 class="main_title"><span>The Grub Bag</span></h2>
+        </div>
+      </div>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <div class="row">
+                  <div class="col-sm-4" *ngFor = "let bag of bags">
+                      <div class="product-item">
+                    <div class="main-label new-label"><span>New</span></div>
+                    <div class="product-image"><a href="product-page.html"><img src="assets/images/bag1.png" alt="Electro"></a>
                       <div class="product-detail-inner">
                         <div class="detail-inner-left left-side">
                           <ul>
@@ -60,199 +61,183 @@
                       </div>
                     </div>
                     <div class="product-item-details">
-                      <div class="product-item-name"> <a href="product-page.html">Grub Bag Plan (Gold)</a> </div>
-                      <div class="price-box"> <span class="price">RM150.00</span> <del class="price old-price">RM300.00</del> </div>
+                      <div class="product-item-name"> <a href="product-page.html">{{bag.name}}</a> </div>
+                      <div class="price-box"> <span class="price">RM{{bag.normal_price / 2}}</span> <del class="price old-price">RM{{bag.normal_price}}</del> </div>
                       <div class="rating-summary-block right-side">
                         <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="item">
-                  <div class="product-item">
-                    <div class="main-label sale-label"><span>Sale</span></div>
-                    <div class="product-image"> <a href="product-page.html"> <img src="assets/images/bag2.png" alt="Electro"> </a>
-
-                      <div class="product-detail-inner">
-                        <div class="detail-inner-left left-side">
-                          <ul>
-                            <li class="pro-cart-icon">
-                              <form>
-                                <button title="Add to Cart"><span></span>Add to Cart</button>
-                              </form>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="detail-inner-left right-side">
-                          <ul>
-                            <li class="pro-wishlist-icon"><a href="wishlist.html" title="Wishlist"></a></li>
-                            <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-item-details">
-                      <div class="product-item-name"> <a href="product-page.html">Grub Bag Plan (Silver)</a> </div>
-                      <div class="price-box"> <span class="price">RM75.00</span> <del class="price old-price">RM150.00</del> </div>
-                      <div class="rating-summary-block right-side">
-                        <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                      </div>
-                    </div>
                   </div>
-                </div>
-                <div class="item">
-                  <div class="product-item">
-                    <div class="main-label new-label"><span>New</span></div>
-                    <div class="main-label sale-label"><span>Sale</span></div>
-
-                    <div class="product-image"> <a href="product-page.html"> <img src="assets/images/bag3.png" alt="Electro"> </a>
-
-                      <div class="product-detail-inner">
-                        <div class="detail-inner-left left-side">
-                          <ul>
-                            <li class="pro-cart-icon">
-                              <form>
-                                <button title="Add to Cart"><span></span>Add to Cart</button>
-                              </form>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="detail-inner-left right-side">
-                          <ul>
-                            <li class="pro-wishlist-icon"><a href="wishlist.html" title="Wishlist"></a></li>
-                            <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-item-details">
-                      <div class="product-item-name"> <a href="product-page.html">Defyant Reversible Dot Shorts</a> </div>
-                      <div class="price-box"> <span class="price">RM45.00</span> <del class="price old-price">RM90.00</del> </div>
-                      <div class="rating-summary-block right-side">
-                        <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                
               </div>
-            </div>
-            </div>
-        </div>
-      </div>
-    </section>
-  <section class="pb-95">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <div class="about-detail">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="heading-part mb-30">
-                  <h2 class="main_title "><span>The Grub Family</span></h2>
-                </div>
-              </div>
-              
-              <div class="col-sm-12">
-                <div class="heading-part align_left center-md">
-                    <h4>Who Do We Help?</h4>
-                <p>Our Grub Bag beneficiaries whom we have adopted as part of this initiative are mostly from the low-income groups, working single mothers, refugees and also the disabled.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-          <div id="blog" class="owl-carousel">
-            <div class="item">
-              <div class="blog-item ">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="blog-media"> 
-                      <img src="assets/images/khadijah.jpg" alt="Electro">
-                      <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
-                      <div class="effect"></div>  
-                    </div>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="blog-detail"> 
-                      <!-- <div class="date"> 22 <span>/ april</span></div> -->
-                      <div class="blog-title"><a href="single-blog.html">KHADIJAH, Petaling Jaya</a></div>
-                      <div class="post-info">
-                        <p>Khadijah’s daily struggle is to stretch her husbands RM1000 pension for her and her 3 children every month. Struck by grief after her husband’s sudden death, it has been a difficult journey for her and her family. Grub Cycle has attempted to alleviate some of her worries with our subsidised Grub Bag, in hopes that it will help her situation.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-item">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="blog-media"> 
-                      <img src="assets/images/unclejo.jpg" alt="Electro"> 
-                      <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
-                      <div class="effect"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="blog-detail"> 
-                      <!-- <div class="date"> 22 <span>/ april</span></div> -->
-                      <div class="blog-title"><a href="single-blog.html">UNCLE JO, Sentul</a></div>
-                      <div class="post-info">
-                        <p> Uncle Jo is partially sighted and lives with his wife, Cik Ros who is also visually impaired and suffers from kidney failure. Uncle Jo has to bring her wife to receive dialysis treatments every week. With no children, they receive their only support from Baitulmal which is less than RM300 per month with no children they only have each other to depend on.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-item ">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="blog-media"> 
-                      <img src="assets/images/zubaidah.jpg" alt="Electro">
-                      <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
-                      <div class="effect"></div>  
-                    </div>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="blog-detail"> 
-                      <!-- <div class="date"> 22 <span>/ april</span></div> -->
-                      <div class="blog-title"><a href="single-blog.html">ZUBAIDAH, Petaling Jaya</a></div>
-                      <div class="post-info">
-                        <p>When struck by the untimely death of her husband in 2014, Kak Zubaidah found herself being the sole breadwinner in the family with 3 mouths to feed. Her eldest son, now 25, needs extra care as he is a slow learner. Her late husbands pension of RM 1000 and small income from selling keropok in her neighbourhood are her only sources of income. Grub Cycle is helping her to ease her financial burdens by subsidising her basic needs with our Grub Bag for one month. With your efforts, we hope to continue being able to support and aid Kak Zubaidah in the months to come.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-item ">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="blog-media"> 
-                      <img src="assets/images/rumahkita.jpg" alt="Electro">
-                      <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
-                      <div class="effect"></div>  
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="blog-detail"> 
-                      <!-- <div class="date"> 22 <span>/ april</span></div> -->
-                      <div class="blog-title"><a href="single-blog.html">RUMAH KITA, Ampang</a></div>
-                      <div class="post-info">
-                        <p>One of the person who stays in Rumah Kita is an ambitious 23 year old mom of a 3 month old, whom she supports on her own. She began an online business which provided her and her family some income until the birth of her child. Now she depends on her mother for everyday expenses, which is shared between her, her child, her retired father, and 3 other siblings.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+
+<!-- <section class=" pt-95 pb-95">
+  <div class="container">
+    <div class="product-listing">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="heading-part mb-30">
+            <h2 class="main_title"><span>The Grub Bag</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="pro_cat">
+          <div class="owl-carousel pro-cat-slider ">
+            <div class="item">
+              <div class="product-item" *ngFor = "let bag of bags">
+                <div class="main-label new-label"><span>New</span></div>
+                <div class="product-image"><a href="product-page.html"><img src="assets/images/bag1.png" alt="Electro"></a>
+                  <div class="product-detail-inner">
+                    <div class="detail-inner-left left-side">
+                      <ul>
+                        <li class="pro-cart-icon">
+                          <form>
+                            <button title="Add to Cart"><span></span>Add to Cart</button>
+                          </form>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="detail-inner-left right-side">
+                      <ul>
+                        <li class="pro-wishlist-icon active"><a href="wishlist.html" title="Wishlist"></a></li>
+                        <li class="pro-compare-icon"><a href="compare.html" title="Compare"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item-details">
+                  <div class="product-item-name"> <a href="product-page.html">{{bag.name}}</a> </div>
+                  <div class="price-box"> <span class="price">RM{{bag.normal_price / 2}}</span> <del class="price old-price">RM{{bag.normal_price}}</del> </div>
+                  <div class="rating-summary-block right-side">
+                    <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="pb-95">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="about-detail">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="heading-part mb-30">
+                <h2 class="main_title "><span>The Grub Family</span></h2>
+              </div>
+            </div>
+            
+            <div class="col-sm-12">
+              <div class="heading-part align_left center-md">
+                  <h4>Who Do We Help?</h4>
+              <p>Our Grub Bag beneficiaries whom we have adopted as part of this initiative are mostly from the low-income groups, working single mothers, refugees and also the disabled.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="blog-item ">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="blog-media"> 
+                    <img src="assets/images/khadijah.jpg" alt="Electro">
+                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
+                    <div class="effect"></div>  
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="blog-detail"> 
+                    <!-- <div class="date"> 22 <span>/ april</span></div> -->
+                    <div class="blog-title"><a href="single-blog.html">KHADIJAH, Petaling Jaya</a></div>
+                    <div class="post-info">
+                      <p>Khadijah’s daily struggle is to stretch her husbands RM1000 pension for her and her 3 children every month. Struck by grief after her husband’s sudden death, it has been a difficult journey for her and her family. Grub Cycle has attempted to alleviate some of her worries with our subsidised Grub Bag, in hopes that it will help her situation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="blog-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="blog-media"> 
+                    <img src="assets/images/unclejo.jpg" alt="Electro"> 
+                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
+                    <div class="effect"></div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="blog-detail"> 
+                    <!-- <div class="date"> 22 <span>/ april</span></div> -->
+                    <div class="blog-title"><a href="single-blog.html">UNCLE JO, Sentul</a></div>
+                    <div class="post-info">
+                      <p> Uncle Jo is partially sighted and lives with his wife, Cik Ros who is also visually impaired and suffers from kidney failure. Uncle Jo has to bring her wife to receive dialysis treatments every week. With no children, they receive their only support from Baitulmal which is less than RM300 per month with no children they only have each other to depend on.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="blog-item ">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="blog-media"> 
+                    <img src="assets/images/zubaidah.jpg" alt="Electro">
+                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
+                    <div class="effect"></div>  
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="blog-detail"> 
+                    <!-- <div class="date"> 22 <span>/ april</span></div> -->
+                    <div class="blog-title"><a href="single-blog.html">ZUBAIDAH, Petaling Jaya</a></div>
+                    <div class="post-info">
+                      <p>When struck by the untimely death of her husband in 2014, Kak Zubaidah found herself being the sole breadwinner in the family with 3 mouths to feed. Her eldest son, now 25, needs extra care as he is a slow learner. Her late husbands pension of RM 1000 and small income from selling keropok in her neighbourhood are her only sources of income. Grub Cycle is helping her to ease her financial burdens by subsidising her basic needs with our Grub Bag for one month. With your efforts, we hope to continue being able to support and aid Kak Zubaidah in the months to come.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="blog-item ">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="blog-media"> 
+                    <img src="assets/images/khadijah.jpg" alt="Electro">
+                    <a href="single-blog.html" title="Click For Read More" class="read">&nbsp;</a>
+                    <div class="effect"></div>  
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="blog-detail"> 
+                    <!-- <div class="date"> 22 <span>/ april</span></div> -->
+                    <div class="blog-title"><a href="single-blog.html">RUMAH KITA, Ampang</a></div>
+                    <div class="post-info">
+                      <p>One of the person who stays in Rumah Kita is an ambitious 23 year old mom of a 3 month old, whom she supports on her own. She began an online business which provided her and her family some income until the birth of her child. Now she depends on her mother for everyday expenses, which is shared between her, her child, her retired father, and 3 other siblings.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { HttpService } from './../http.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,11 +9,22 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailComponent implements OnInit {
 
-product_id;
+deal_id;
+deal;
 
-  constructor(public router:Router, public route:ActivatedRoute){
-  	this.product_id = this.route.snapshot.params['id'];
-  	console.log(this.product_id);
+  constructor(
+  	public router:Router,
+  	public route:ActivatedRoute,
+  	public httpService:HttpService
+  	){
+  	this.deal_id = this.route.snapshot.params['id'];
+  	console.log(this.deal_id);
+
+  	this.httpService.getDealById(this.deal_id)
+  	.subscribe( data => {
+  		this.deal = data.data
+  		console.log(this.deal)
+  	});
   }
 
   ngOnInit() {

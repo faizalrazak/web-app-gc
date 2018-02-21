@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from './../http.service';
 
 @Component({
   selector: 'app-grub-bag',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrubBagComponent implements OnInit {
 
-  constructor() { }
+bags;
+
+  constructor(
+  	public httpService:HttpService
+  	){
+
+  	this.httpService.getAllGrubBag()
+  	.subscribe( data => {
+  		this.bags = data.data
+  	})
+  }
 
   ngOnInit() {
   }

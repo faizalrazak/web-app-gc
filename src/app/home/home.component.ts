@@ -9,17 +9,43 @@ import { HttpService } from './../http.service';
 })
 export class HomeComponent implements OnInit {
 
-products;
+latest;
+homemades;
+currentPage;
+grubBags;
+blogLatest;
 
-  constructor(public router:Router, public httpService:HttpService){
+  constructor(
+    public router:Router,
+    public httpService:HttpService
+  ){
   	this.httpService.getLatestProducts()
 	  .subscribe(data => {
 	    console.log(data)
-	    this.products = data.data
-	})
+	    this.latest = data.data
+    })
+    
+    this.httpService.getHomemade()
+    .subscribe(data =>{
+      console.log(data)
+      this.homemades = data.data;
+    })
+
+    this.httpService.getGrubBag()
+    .subscribe(data => {
+      this.grubBags = data.data;
+      console.log(this.grubBags)
+    });
+
+    this.httpService.getBlogLatest()
+    .subscribe(data => {
+      this.blogLatest = data.data
+    })
   }
 
   ngOnInit() {
+    this.currentPage = this.router.url;
+    console.log(this.currentPage)
   }
 
   aboutUs(){

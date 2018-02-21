@@ -26,13 +26,7 @@
             </div>
             <div class="sidebar-contant">
               <ul>
-                <li><a>Baking <span>(21)</span></a></li>
-                <li><a>Biscuit & Cake <span>(05)</span></a></li>
-                <li><a>Breakfast <span>(10)</span></a></li>
-                <li><a>Canned Food <span>(12)</span></a></li>
-                <li><a>Cereal <span>(18)</span></a></li>
-                <li><a>Chocolates & Sweets <span>(70)</span></a></li>
-                <li><a>Cooking Ingredients <span>(70)</span></a></li>
+                <li *ngFor = "let category of product_category"><a>{{category.name}} <span>(21)</span></a></li>
               </ul>
             </div>
           </div>
@@ -167,9 +161,9 @@ can purchase groceries, pastries and perishable food that are typically removed 
         <div class="product-listing">
           <div class="inner-listing">
             <div class="row">
-              <div *ngFor="let product of products" class="col-md-4 col-xs-6 mb-30">
+              <div *ngFor="let deal of deals" class="col-md-4 col-xs-6 mb-30">
                 <div class="product-item">
-                  <div class="product-image"> <a (click)="detail(product.id)"> <img src="assets/images/mission-wrap.jpg" alt="Electro"> </a>
+                  <div class="product-image"> <a (click)="detail(deal.id)"> <img src="assets/images/mission-wrap.jpg" alt="Electro"> </a>
                     <div class="product-detail-inner">
                       <div class="detail-inner-left left-side">
                         <ul>
@@ -188,8 +182,8 @@ can purchase groceries, pastries and perishable food that are typically removed 
                     </div>
                   </div>
                   <div class="product-item-details">
-                    <div class="product-item-name"> <a href="">{{product.name}}</a> </div>
-                    <div class="price-box"> <span class="price">RM{{product.normal_price - 2}}</span> <del class="price old-price">RM{{product.normal_price}}</del> </div>
+                    <div class="product-item-name"> <a href="">{{deal.display_name}}</a> </div>
+                    <div class="price-box"> <span class="price">RM{{deal.promo_price}}</span> <del class="price old-price">RM{{deal.product.normal_price}}</del> </div>
                     <div class="rating-summary-block right-side">
                       <div title="53%" class="rating-result"> <span style="width:53%"></span> </div>
                     </div>
